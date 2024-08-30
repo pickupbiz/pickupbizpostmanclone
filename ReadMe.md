@@ -14,7 +14,6 @@ A simple web version of Postman using React. UI is designed using Tailwind CSS. 
   <a href="https://codemirror.net/" target="_blank">CodeMirror</a> and 
   <a href="https://tailwindcss.com" target="_blank">Tailwind CSS</a>.
 </h4>
-
 <div align="center">
 	<img src="https://i.ibb.co/Pj6f0RN/Screenshot-12.png" />
 </div>
