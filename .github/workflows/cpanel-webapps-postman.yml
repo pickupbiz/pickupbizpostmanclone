@@ -47,8 +47,8 @@ jobs:
       - uses: actions/download-artifact@v3
         with:
           name: Build
-          path: build
-      - run: zip -r build.zip build/
+          path: dist
+      - run: zip -r build.zip dist/
       - uses: ncipollo/release-action@v1
         with:
           artifacts: "build.zip"
@@ -63,4 +63,4 @@ jobs:
       - name: Deployment to cPanel
         run: |
           - export DEPLOYPATH=/home2/pickupbiz/postman.pickupbiz.com/
-          - /build cp -r * $DEPLOYPATH
+          - /dist cp -r * $DEPLOYPATH
